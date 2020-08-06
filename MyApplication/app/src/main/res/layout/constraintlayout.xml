@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello Android"
+        app:layout_constraintLef_toLefOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/sayHi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Say Hi!"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <Button
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/androidButton"
+        android:layout_width="wrap_content"
+        android:layout_heigh="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Android"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sayHi"
+        android:layout_height="" />
+
+    <Button
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/helloButton"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        app:layout_constraintTop_toBottomOf="@+id/sayHi"
+        app:layout_constraintLeft_toRightOf="@id/androidButton" />
+
+    <Button
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Center"
+        app:layout_constraintTop_toBottomOf="@id/helloButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/textViewOne"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintCircle="@id/center"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintCircleAngle="45"
+        android:text="1"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

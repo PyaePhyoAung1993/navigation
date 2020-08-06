@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+    <Button
+        android:id="@+id/buttonOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button One"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/buttoTwo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Button Two"
+        android:layout_below="@+id/buttonOne"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        android:id="@+id/buttonThree"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Button Three"
+        android:layout_below="@+id/buttonOne"
+        android:layout_toRightOf="@+id/buttoTwo"
+        android:background="@color/colorPrimaryDark"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="Hello World!"
+        android:layout_below="@+id/buttoTwo"
+        android:layout_marginTop="10dp"
+        android:id="@+id/buttonFour"/>
+
+    <Button
+        android:id="@+id/bbbb"
+        android:layout_width="200dp"
+        android:layout_height="500dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Hello World!!"
+        android:layout_below="@+id/buttonFour"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
